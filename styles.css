@@ -262,6 +262,7 @@
                     margin: 0;
                     top: 17px;
                     position: relative;
+                    opacity: 100%;
                 }
                 
                 .timeline .col-2 {
@@ -329,4 +330,9 @@
                 .faqRaw {
                     position: fixed;
                     z-index: 1;
+                }
+                
+                .chat-row {
+                    overflow-y: scroll;
+                    height: 300px;
                 }
