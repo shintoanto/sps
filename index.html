@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style2.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -18,49 +19,41 @@
 <body style="overflow-x: hidden;">
 
 
-    <container>
-        <div class="row">
-            <div class="col-12 col-md-12 mt-4 text-center">
-                <h1 class=" site-logo">
-                    <a href="index.html" class="text-black h2 " style="text-decoration: none;">
-                            SPS<span class="text-primary ">.</span>
-                        </a>
-                </h1>
+    <div class="spsHeaderSection">
+        <div class="container">
+            <div class="row">
+                <a href="index.html" class="text-center pt-3 text-black  spsHeading">SPS<span
+                        class="spsDot">.</span></a>
             </div>
         </div>
-    </container>
+
+        <!--SPS Header section closing-->
+
+        <!--Section 1 starts-->
 
 
-
-    <div class="secondSection">
-        <div class="row mb-5">
-            <div class="col-12 col-md-6">
-                <div class="im">
-                    <img id="img" src="sps_image/whats_sps.png" onclick="change()" alt="" class="img-fluid mb-5" style="cursor:pointer">
-                    <div class="ratio ratio-16x9">
-                        <!-- <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe> -->
-                        <iframe id="video" style="display: none;" width="635" height="357" src="https://www.youtube.com/embed/I9QGnNvrmoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+        <div class=" container">
+            <div class="row spsHeaderSection">
+                <div class="col-md-6  col-12">
+                    <!--sps video-->
+                    <img src="sps_imags/whats_sps (1).png" id="imageOne" class="img-fluid mt-2 first-image " onclick="FirstVideo()" alt="vido not available">
+                    <div class="ratio ratio-16x9  " id="videoOne" style="display: none;">
+                        <iframe id="firsVideolink" src="https://www.youtube.com/embed/I9QGnNvrmoY" title="YouTube video player" class="mt-5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-                <!-- <div style="display:none">
-                    <div class=" mb-5">
-                        <iframe src="https://www.youtube.com/embed/I9QGnNvrmoY?enablejsapi=1" class="embed-responsive-item" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
 
-                </div> -->
-            </div>
-            <div class=" col-12 col-md-6 secondSectionHeading">
-                <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5 text-black">
-                    <h2>No Tuition Fee Upfront,<br> Pay Only When You Earn.</h2>
-                    <p class="mb-3">From Zero to a high paid Software Engineer in 180 days.</p>
-                    <div>
-                        <a id="apply-now" href="application/index.html" class="btn btn-primary mr-2 mb-2">Apply
-                                Now</a>
-                        <p class="mb-2">(NB: Read all the FAQs carefully before you
-                            <br> submit the application)
-                        </p>
+                <!--Right quotes-->
+                <div class="col-md-6 col-12 section-1-right">
+                    <h1 class=" mt-md-5 ps-md-5 section-1-para">No Tuition Fee<br> Upfront,<br> Pay Only When<br> You Earn.
+                    </h1>
+                    <p class=" ps-md-5 mt-md-4 bt-3 section-1-quotes "> From Zero to a high paid Software Engineer in 180 <br>days
+                    </p>
+                    <div class="section1-button">
+                        <a href="https://spsonline.in/application/index.html" class=" btn btn-success ms-md-5 ">Apply
+                            Now</a>
                     </div>
+                    <p class="ps-md-5 mt-md-2 section-1-quotes">(NB: Read all the FAQs carefully before you <br> submit the application)
+                    </p>
                 </div>
             </div>
         </div>
@@ -160,262 +153,116 @@
         </div>
 
     </div>
-    <div style="height: 80px;"></div>
 
-    <div class="">
-        <div class="container">
-            <h2 class="pb-3 pt-2 border-bottom mb-5 titles">Life at SPS</h2>
-            <p style="color: grey;">SPS is built on 3 principles i.e Open Material Education, Self Learning and Peer to peer Learning</p>
-            <!--first section-->
-            <div class="row align-items-center how-it-works d-flex">
-                <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-                    <div class="circle font-weight-bold">1</div>
+
+    <section>
+        <!-- Line section starts  pt-1-->
+        <div class="container pl-4 " style="padding:14%">
+            <div class="row">
+                <div class="col-sm-12 border-bottom">
+                    <h2 class="title-text pb-4">Life at SPS</h2>
                 </div>
+                <p class="text-secondary pt-5 pb-5">SPS is built on 3 principles i.e Open Material Education, Self Learning and Peer to peer Learning</p>
+
+            </div>
+            <div class="row road1">
                 <div class="col-6">
-                    <h5>The Ignition</h5>
-                    <p style="color: grey;">Learn all the fundamentals of programming(0-30 days).</p>
+                    <h5 class="title">The Ignition</h5>
+                    <p class="text-secondary">Learn all the fundamentals of programming(0-30 days).</p>
                 </div>
             </div>
-            <!--path between 1-2-->
-            <div class="row timeline">
-                <div class="col-2">
-                    <div class="corner top-right"></div>
-                </div>
-                <div class="col-8">
-                    <hr/>
-                </div>
-                <div class="col-2">
-                    <div class="corner left-bottom"></div>
-                </div>
-            </div>
-            <!--second section-->
-            <div class="row align-items-center justify-content-end how-it-works d-flex">
-                <div class="col-6 text-right">
-                    <h5>The Acceleration</h5>
-                    <p style="color: grey;">During this period you will dive deep into various aspects of your domain (31-90 days). 2
 
-                    </p>
-                </div>
-                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-                    <div class="circle font-weight-bold">2</div>
-                </div>
-            </div>
-            <!--path between 2-3-->
-            <div class="row timeline">
-                <div class="col-2">
-                    <div class="corner right-bottom"></div>
-                </div>
-                <div class="col-8">
-                    <hr/>
-                </div>
-                <div class="col-2">
-                    <div class="corner top-left"></div>
-                </div>
-            </div>
-            <!--third section-->
-            <div class="row align-items-center how-it-works d-flex">
-                <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
-                    <div class="circle font-weight-bold">3</div>
-                </div>
+            <div class="row road2">
                 <div class="col-6">
-                    <h5>And the Race</h5>
-                    <p style="color: grey;">You will launch as many live projects as possible(91-180 days).</p>
+                </div>
+                <div class="col-6" style="float: right;">
+                    <h5 class="title">The Acceleration</h5>
+                    <p class="text-secondary">During this period you will dive deep into various aspects of your domain (31-90 days).</p>
+                </div>
+            </div>
+
+            <div class="row road3">
+                <div class="col-6">
+                    <h5 class="title">And the Race</h5>
+                    <p class="text-secondary">You will launch as many live projects as possible(91-180 days).</p>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
 
+    </section>
 
-
-
-
-
-
-
-
-    <!-- <div class="mt-3 row mb-3 site-section ">
-
-
-        <div class="col-lg-12 pr-lg-12 mr-auto mt-5 order-2 order-lg-1">
-            <div class="container">
-                <h2 class="pb-3 pt-2 border-bottom mb-5 text-black">Life at SPS</h2>
-                <p>SPS is built on 3 principles i.e Open Material Education, Self Learning and Peer to peer Learning</p>
-                <!--first section-->
-    <!-- <div class="row align-items-center how-it-works d-flex">
-        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-            <div class="circle font-weight-bold">1</div>
-        </div>
-        <div class="col-6">
-            <h5 class="text-black">The Ignition</h5>
-            <p>Learn all the fundamentals of programming(0-30 days).</p>
-        </div>
-    </div>
-    <!--path between 1-2-->
-    <!-- <div class="row timeline">
-        <div class="col-2">
-            <div class="corner top-right"></div>
-        </div>
-        <div class="col-8">
-            <hr />
-        </div>
-        <div class="col-2">
-            <div class="corner left-bottom"></div>
-        </div>
-    </div>
-    <!--second section-->
-    <!-- <div class="row align-items-center justify-content-end how-it-works d-flex">
-        <div class="col-6 text-right">
-            <h5 class="text-black">The Acceleration</h5>
-            <p>During this period you will dive deep into various aspects of your domain (31-90 days).</p>
-        </div>
-        <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-            <div class="circle font-weight-bold">2</div>
-        </div>
-    </div>
-    <!--path between 2-3-->
-    <!-- <div class="row timeline">
-        <div class="col-2">
-            <div class="corner right-bottom"></div>
-        </div>
-        <div class="col-8">
-            <hr />
-        </div>
-        <div class="col-2">
-            <div class="corner top-left"></div>
-        </div>
-    </div> -->
-    <!--third section-->
-    <!-- <div class="row align-items-center how-it-works d-flex">
-        <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
-            <div class="circle font-weight-bold">3</div>
-        </div>
-        <div class="col-6">
-            <h5 class="text-black">And the Race</h5>
-            <p>You will launch as many live projects as possible(91-180 days).</p>
-        </div> -->
-    <!-- </div>
-    </div>
-    </div>
-    </div> -->
-
-    <!-- <div class="domainchoose bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h2 class="titles mb-3 text-left">Life at sps</h2>
-                </div>
-                <hr>
-                <p style="color: grey;font-weight: 300;
-                font-size: 1rem;">SPS is built on 3 principles i.e Open Material Education, Self Learning and Peer to peer Learning</p>
-            </div>
-        </div> -->
 
 
     </div>
 
     <div style="height: 20px;"></div>
 
-    <div class="domainchoose bg-light">
-        <div style="height: 10px;"></div>
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h2 class="titles mb-3 text-left">What Domains You Can Choose</h2>
-                </div>
-            </div>
+    <div class="section-5">
+        <div class="container section-5-container">
+            <h2 class="section-5-title pt-3 pb-5">What Domains You Can Choose</h2>
 
-            <div class="row align-items-stretch">
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="row section-5-tile pb-5 ">
 
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3 class="domainChooseHeading">Web Development</h3>
-                            <p>in Python / Node.js / PHP / .Net / Java / Go / Ruby</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>Mobile App Development</h3>
-                            <p>In Kotlin Android / iOS / Flutter / React - Native</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>Cyber Security</h3>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>Artificial Intelligence</h3>
-                            <p></p>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-6 pt-3 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pt-4">Web Development</h3>
+                        <p class="pb-5 section-5-short">in Python / Node.js / PHP / .Net / Java / Go / Ruby</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>Machine Learning</h3>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-6 pt-3 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pt-4">Mobile App Development</h3>
+                        <p class="pb-5 section-5-short">In Kotlin Android / iOS / Flutter / React - Native</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>Data science</h3>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">Cyber Security</h3>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>BlockChain</h3>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">Artificial Intelligence</h3>
                     </div>
-
                 </div>
 
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>Augmented Reality / Virtual Reality</h3>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">Machine Learning</h3>
                     </div>
-
                 </div>
 
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>Software Testing</h3>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">Data Science</h3>
                     </div>
-
                 </div>
 
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit2">
-                        <div class="unit2inner">
-                            <h3>DevOps</h3>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">BlockChain</h3>
                     </div>
+                </div>
 
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">Augmented Reality / Virtual Reality</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">Software Testing</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 pt-2 sec-5-tile">
+                    <div class="section-5-tile1 ps-4 pt-3 ">
+                        <h3 class="section-5-h3 pb-5 pt-4">DevOps</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -447,62 +294,45 @@
         </div>
 
 
-        <div class="container">
-            <div class="row align-items-center justify-content-end how-it-works d-flex">
-                <p style="color: grey;">3 step process to join the SPS</p>
-                <div class="col-6 text-right">
-                    <h5>Apply Online</h5>
-                    <p style="color: grey;">Submit your application online and pick an interview date which is convenient for you. </p>
-                </div>
-                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-                    <div class="circle font-weight-bold">1</div>
-                </div>
-            </div>
-            <div class="row timeline">
-                <div class="col-2">
-                    <div class="corner right-bottom"></div>
-                </div>
-                <div class="col-8">
-                    <hr/>
-                </div>
-                <div class="col-2">
-                    <div class="corner top-left"></div>
-                </div>
-            </div>
-            <div class="row align-items-center how-it-works d-flex">
-                <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
-                    <div class="circle font-weight-bold">2</div>
-                </div>
-                <div class="col-6">
-                    <h5>The Interview</h5>
-                    <p style="color: grey;">Appear for the telephone interview. Give the best and honest answers you can.</p>
-                </div>
-            </div>
-            <div class="row timeline">
-                <div class="col-2">
-                    <div class="corner top-right"></div>
-                </div>
-                <div class="col-8">
-                    <hr/>
-                </div>
-                <div class="col-2">
-                    <div class="corner left-bottom"></div>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-end how-it-works d-flex">
-                <div class="col-6 text-right">
-                    <h5>Joining Mail</h5>
-                    <p style="color: grey;">Get the joining mail if you have qualified.
-                    </p>
-                </div>
-                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-                    <div class="circle font-weight-bold">2</div>
-                </div>
-            </div>
-            <p style="color: grey;">If you failed to qualify the interview, then prepare well, schedule it again and repeat the process until you win.
+        <section>
+            <div class="container">
+                <!-- 3steps to join sps starts-->
+                <div class="col-sm-12">
+                    <div class="row">
+                        <p class="text-secondary pt-5 pb-5">3 step process to join the SPS</p>
+                    </div>
 
-            </p>
-        </div>
+                    <div class="row road4">
+                        <div class="col-6 ">
+                        </div>
+                        <div class="col-6">
+                            <h5 class="title">Apply Online</h5>
+                            <p class="text-secondary">Submit your application online and pick an interview date which is convenient for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="row road5">
+                        <div class="col-6 " style="float: right;">
+                            <h5 class="title">The Interview</h5>
+                            <p class="text-secondary">Appear for the telephone interview. Give the best and honest answers you can.</p>
+                        </div>
+                    </div>
+
+                    <div class="row road6">
+                        <div class="col-6 ">
+                        </div>
+                        <div class="col-6">
+                            <h5 class="title">Joining Mail</h5>
+                            <p class="text-secondary">Get the joining mail if you have qualified. 3 If you failed to qualify the interview, then prepare well, schedule it again and repeat the process until you win.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-secondary pt-5 pb-5">If you failed to qualify the interview, then prepare well, schedule it again and repeat the process until you win.</p>
+                </div>
+                <!-- 3steps to join sps ends-->
+            </div>
+
+        </section>
 
         <div class="container">
 
@@ -529,6 +359,13 @@
 
         <div class="container">
 
+            <div class="img-2 mt-5 mb-5">
+                <img onclick="fourthVideo()" id="fourth-img" src="sps_imags/howmuchdoesitcost.png" class="image-fluid col-12 pt-5 ">
+
+                <div class="ratio ratio-16x9 mb-5 " style="display: none;" id="fourth-video">
+                    <iframe class="mt-5 mb-5" id="fourth-video-content" src="https://www.youtube.com/embed/vhG3wKGp2mc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
             <div class="row">
                 <div class="convocation">
                     <h2 class="titles pb-3 pt-2 border-bottom mb-5 text-black">Convocation</h2>
@@ -537,108 +374,346 @@
                 <div class="col-12">
 
 
-                    <div id="vidbt5" onclick="this.nextElementSibling.style.display='block'; this.style.display='none';onPlayer5click()">
+                    <!-- <div id="vidbt5" onclick="this.nextElementSibling.style.display='block'; this.style.display='none';onPlayer5click()">
                         <img src="sps_image/ConvocationCeremony.png" class="img-fluid mt-5 mb-5" style="cursor:pointer;" />
-                    </div>
-                    <div style="display:none">
-                        <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
-                            <iframe id="vid5" class="embed-responsive-item" src="https://www.youtube.com/embed/m_hx0Ebg5Yo?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                    </div> -->
+
+                    <img onclick="fifthVideo()" id="fifth-img" src="sps_imags/ConvocationCeremony.png" class="img-fluid mb-5 mt-5">
+                    <div class="ratio ratio-16x9 mb-5 " style="display: none;" id="fifth-video">
+                        <iframe class="mt-5 mb-5" id="fifth-video-content" src="https://www.youtube.com/embed/m_hx0Ebg5Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 feature-big faq-or">
                         <h2 class="titles pb-3 pt-2 border-bottom mb-5 text-black " id="faq">FAQs</h2>
                     </div>
+                </div> -->
+
+
+
+        <div class="section-8">
+            <div class="container">
+                <div class="faq-head col-6">
+                    <h1 class="faq mb-5 border-bottom pb-2">FAQs</h1>
                 </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 mb-5 chat-box">
 
-
-
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 chat-row">
-                    <div class="footerLast">
-                        <div class="chatMe">
-                            <span class="chatHeading">Who is sps</span>
-                        </div>
-
-                        <div class="chatMeR">
-                            <span class="chatHeading">Anyone who wants to learn Computer Programming and build a good
-                                career as a
-                                Software Engineer </span>
+                        <div class="message-right pb-4 h-effect ">
+                            <div class="hidden-div">
+                                <span class="hidden-data">Shabeer Feb 15,2:30 PM</span>
+                            </div>
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">Who is SPS for?</span>
+                            </div>
                         </div>
 
-                        <div class="chatMe">
-                            <span class="chatHeading">Do I need any prior knowledge/ experience in computer programming
-                                to join
-                                SPS?</span>
-                        </div>
-                        <div class="chatMeR">
-                            <span class="chatHeading">No, you don’t require any prior knowledge / experience in computer
-                                programming </span>
-                        </div>
-                        <div class="chatMe">
-                            <span class="chatHeading">But you must be ready to learn it.</span>
-                        </div>
-                        <div class="chatMeR">
-                            <span class="chatHeading">Do I need a degree to join SPS?</span>
-                        </div>
-                        <div class="chatMe">
-                            <span class="chatHeading">No, you don’t need any degree or educational qualifications</span>
-                        </div>
-                        <div class="chatMeR">
-                            <span class="chatHeading">What are the eligibility criteria to join SPS?</span>
-                        </div>
-                        <div class="chatMe">
-                            <span class="chatHeading">Applicants should have basic mathematical skills such as addition,
-                                subtraction, multiplication and division</span>
-                        </div>
-                        <div class="chatMeR">
-                            <span class="chatHeading">Ability to read and write in English.</span>
-                        </div>
-                        <div class="chatMe">
-                            <span class="chatHeading">Can I learn a specific domain like cybersecurity, data science, AI/ML etc.,
-                                at SPS?</span>
-                        </div>
-                        <div class="chatMeR ">
-                            <span class="chatHeading">Yes, you can choose any domain as you wish</span>
+                        <div class="message-left  me-5 h-effect">
+                            <div class="hidden-div hidden-div-left mt-3">
+                                <span class="hidden-data-left">Faizal Feb 15,2:31 PM</span>
+                            </div>
+                            <div class="chat2 pt-2 mt ps-4 pb-3 me-5">
+                                <span>Anyone who wants to learn Computer Programming and build a good career as a
+                                            Software Engineer</span>
+                                <span>😀</span>
+                            </div>
                         </div>
 
+                        <div class="message-right pb-4 h-effect">
+                            <div class="hidden-div">
+                                <span class="hidden-data">Shabeer Feb 15,2:32 PM</span>
+                            </div>
+                            <div class="chat1 pt-2 ms-5 ">
+                                <span class="chat1-text">Do I need any prior knowledge/ experience in computer programming
+                                            to join
+                                            SPS?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 pt-5 me-5 h-effect">
+                            <div class="chat2 pt-2 mt-4 ps-4 pb-3 me-5">
+                                <span>No, you don’t require any prior knowledge / experience in computer
+                                            programming</span>
+                                <span>😀</span>
+                            </div>
+                        </div>
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2  ps-4 pb-3 me-5">
+                                <span>But you must be ready to learn it.</span>
+                                <span>😀</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right pb-4 h-effect">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">Do I need a degree to join SPS?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 mt-5 ps-4 pb-3 me-5">
+                                <span>No, you don’t need any degree or educational qualifications.</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right ms-5 pb-4 h-effect ">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">What are the eligibility criteria to join SPS?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 mt-5 ps-4 pb-3 me-5">
+                                <span>Applicants should have basic mathematical skills such as addition,
+                                            subtraction, multiplication and division.</span>
+                                <span>➕➖➗✖</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>Ability to read and write in English.</span>
+                                <span>📖📝</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right ms-5 pb-5 h-effect ">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">Can I learn a specific domain like cybersecurity, data science,
+                                            AI/ML etc.,
+                                            at SPS?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left mt-5 pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 mt-5 ps-4 pb-3 me-5">
+                                <span>Yes, you can choose any domain as you wish</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>We don’t control what you learn</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>Everything is self learnt and learnt from peers</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right ms-5 pb-4 h-effect">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">What are the admission procedures of SPS?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 mt-5 ps-4 pb-3 me-5">
+                                <span>1. Submit an online application on this website.</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>2.You will get an interview call from SPS at the date and time you have
+                                            picked up</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>3.If you qualify the interview you will get a joining date and other details
+                                            via email</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>4.Pay the refundable caution deposit amount and confirm your seat</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right pb-4 h-effect ">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">How do I prepare for the SPS interview?</span>
+                            </div>
+
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 mt-5 me-5">
+                                <span>SPS interview consists of very basic programming questions and few general
+                                            questions about yourself.</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right pb-4 h-effect">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">Can I apply again if I failed the interview?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 mt-5 me-5">
+                                <span>Yes, you can apply till you get qualified</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>But be prepared thoroughly before you make each attempt</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right pb-4 h-effect">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">Will I have to pay any fee upfront?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 mt-5 me-5">
+                                <span>No. There are no upfront fees and you pay via an <b> ISA </b> (detailed
+                                            explanation in the following questions) once you get a job</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>However, we request a fully refundable deposit of Rs 10,000 once you get
+                                            selected, to confirm your seat in a batch</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>We do this because we’ve limited seats in the program and we need to make
+                                            sure someone else can’t take away this opportunity from you by false confirmation</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>We refund the full amount of Rs 10,000 when you complete the program</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right pb-4 h-effect ">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">Are there any other hidden charges</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 mt-5 me-5">
+                                <span>No, there are no other hidden charges like admission fee, exam fee,
+                                            certificate fee, blah blah blah</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>But candidates are requested to pay a small amount for the infrastructure
+                                            facilities that you use like internet, dedicated workspace, cleaning and maintenance
+                                            etc.,</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>which usually ranges between Rs. 3000 to 4000 per month depends upon the SPS
+                                            hub you get</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right pb-4 h-effect">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">What is an ISA and how does it work?</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 mt-5 me-5">
+                                <span>An ISA or Income Share Agreement is used for paying SPS tuition once you
+                                            have got a job at the salary you deserve</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>You will pay 15% of your monthly income for a maximum period of 24 months or
+                                            a maximum cap amount of Rs 2 lakhs</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 h-effect">
+                            <div class="chat2 pt-2 ps-4 pb-3 me-5">
+                                <span>Since SPS does not charge any fees upfront, the ISA model incentivises us to
+                                            provide superior training and access to the highest paying opportunities for you</span>
+                            </div>
+                        </div>
+
+                        <div class="message-right ms-5   pb-4 h-effect ">
+                            <div class="chat1 pt-2">
+                                <span class="chat1-text">What happens if I quit the program? Do I still have to pay</span>
+                            </div>
+                        </div>
+
+                        <div class="message-left pb-4 me-5 ">
+                            <div class="chat2 pt-2 ps-4 pb-3 mt-5 me-5">
+                                <span>If you quit or do not pass the performance reviews during the program, you
+                                            will not be bound by the income share agreement and we will go our separate ways</span>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
+                    <!--Address section-->
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="footerLast">
-                        <div class="flex-col"><span>Address</span></div>
-                        <span>
-                            InfoPark Kochi & Cyberpark Calicut
-                        </span>
-                    </div>
-                    <div class="footerLast">
-                        <div class="flex-col"><span>Lets Talk</span></div>
-                        <span class="txt3">
-                            <a href="tel:+917902606117">+91 7902606117</a><br>
-                            <a href="tel:+918086356702">+91 8086356702</a>
-                        </span>
-                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 mt-md-5 pt-md-5">
+                        <div class="container mt-md-5 pt-md-5">
+                            <div class="fianl-info">
 
-                    <div class="footerLast">
-                        <div class="flex-col"><span>General Support</span></div>
-                        <span class="txt3">
-                            <a href="@mailto:sps@packapeer.com">sps@packapeer.com</a>
-                        </span>
+                                <div class="adress">
+                                    <i class="fas fa-map-marker-alt ms-5"></i>
+                                    <h2 class="d-inline ms-3 address-text"> Address</h2>
+                                </div>
+                                <div class="adress-info ms-5 mt-4">
+                                    <h3 class="adress1 ms-4">InfoPark Kochi & Cyberpark Calicut</h3>
+                                </div>
+
+                                <div class="adress mt-5">
+                                    <img src="https://img.icons8.com/ios/20/000000/phone.png" class="ms-5" />
+                                    <h2 class="d-inline ms-3 address-text"> Lets Talk</h2>
+                                </div>
+                                <div class="adress-info ms-5 mt-4">
+                                    <h3 class="adress1 ms-4">+91 7902606117</h3>
+                                    <h3 class="adress1 ms-4">+91 7902606117</h3>
+                                </div>
+
+                                <div class="adress mt-5">
+                                    <i class="far fa-envelope ms-5"></i>
+                                    <h2 class="d-inline ms-3 address-text"> General Support</h2>
+                                </div>
+                                <div class="adress-info ms-5 mt-4">
+                                    <h3 class="adress1 ms-4">sps@packapeer.com</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <a href="#" class="material-icons floating-btn" id="myBtn">^</a>
         </div>
 
-        <div class="footer py-5 border-top text-center">
-            <div class="container">
+        <div class="footer py-5 border-top text-center" style="background-color: white;">
+            <div class="container" style="background-color: white;">
                 <div class="row mb-5">
                     <div class="col-12">
                         <p class="mb-0">
@@ -687,11 +762,15 @@
 
 <script src="script.js"></script>
 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous ">
 </script>
+<script src="script1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js " integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN " crossorigin="anonymous "></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js " integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/ " crossorigin="anonymous "></script>
 </body>
+
+</html>
 
 </html>
 
